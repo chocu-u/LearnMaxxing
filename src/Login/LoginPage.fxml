@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="1000.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="LoginController">
+   <children>
+      <ImageView fitHeight="621.0" fitWidth="1002.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../Resources/Login%20Background.png" />
+         </image>
+      </ImageView>
+      <Label layoutX="599.0" layoutY="131.0" prefHeight="50.0" prefWidth="357.0" text="Login" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="33.0" />
+         </font>
+      </Label>
+      <TextField fx:id="usernametextfield" layoutX="600.0" layoutY="234.0" prefHeight="40.0" prefWidth="330.0" promptText="Username" style="-fx-background-radius: 10;" />
+      <Label layoutX="600.0" layoutY="282.0" prefHeight="38.0" prefWidth="214.0" text="Password" textFill="WHITE" />
+      <PasswordField fx:id="passwordtextfield" layoutX="600.0" layoutY="319.0" prefHeight="40.0" prefWidth="330.0" promptText="Password" style="-fx-background-radius: 10;" />
+      <Label layoutX="600.0" layoutY="201.0" prefHeight="38.0" prefWidth="57.0" text="Username" textFill="WHITE" />
+      <JFXButton fx:id="loginbutton" buttonType="RAISED" layoutX="667.0" layoutY="391.0" prefHeight="38.0" prefWidth="202.0" style="-fx-text-fill: white; -fx-background-radius: 25; -fx-background-color: #42736c;" text="Sign in" textFill="#42736c">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </JFXButton>
+      <Button fx:id="signupbutton" blendMode="SRC_ATOP" layoutX="800.0" layoutY="452.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#signupButtonHandler" prefHeight="26.0" prefWidth="62.0" style="-fx-background-color: transparent;" text="Sign Up" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="11.0" />
+         </font>
+      </Button>
+      <Label layoutX="676.0" layoutY="455.0" prefHeight="20.0" prefWidth="138.0" text="Don't have an account yet?" textFill="WHITE">
+         <font>
+            <Font size="11.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

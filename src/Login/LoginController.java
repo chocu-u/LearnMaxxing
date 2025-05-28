@@ -1,3 +1,4 @@
+package Login;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Node;
@@ -9,7 +10,7 @@ public class LoginController {
 
     public void signupButtonHandler(ActionEvent event) {
         try {
-            Parent signupRoot = FXMLLoader.load(getClass().getResource("SignupPage.fxml"));
+            Parent signupRoot = FXMLLoader.load(getClass().getResource("/Login/SignupPage.fxml"));
             Stage stage = (Stage) ((Node) event.getSource()).getScene().getWindow();
             stage.setScene(new Scene(signupRoot, 1000, 600));
         } catch (Exception e) {
